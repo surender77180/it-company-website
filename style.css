@@ -6,6 +6,14 @@
 body {
   margin: 0;
   padding: 0;
+  text-transform: capitalize;
+  background-image: url(./image/back.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+body h1{
+  color: #002e5f;
 }
 
 #header {
@@ -48,40 +56,6 @@ body {
   padding-top: 300px;
   text-align: center;
 }
-
-#about-us {
-  width: 100%;
-  height: 400px;
-  text-align: center;
-  margin-top: 10px;
-}
-.about-text {
-  font-size: x-large;
-  margin: 10px 0px;
-}
-.about-text p {
-  padding-top: 5px;
-  padding-bottom: 7px;
-}
-#about-us button {
-  border: 2px solid blue;
-  border-radius: 1em;
-  padding: 0.5em 1em;
-  font-size: 1em;
-  background-color: white;
-}
-
-#services {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: #f2f2f2;
-  padding: 2em 0;
-  gap: 2em;
-  font-size: 1.2em;
-}
 .crown {
   position: relative;
 }
@@ -96,15 +70,59 @@ body {
   border-top: 4px solid;
   border-left: 4px solid;
   left: -0.4em;
-  top: -0.1em;
+  top: -0.2em;
 }
 .crown::after {
   border-bottom: 4px solid;
   border-right: 4px solid;
-  bottom: -0.1em;
+  bottom: -0.2em;
   right: -0.4em;
 }
-.services-container {
+
+#about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 2em 0;
+  gap: 2em;
+  font-size: 1.2em;
+}
+
+.about-text {
+  width: 70%;
+}
+.about-text p {
+  font-size: large;
+  padding: 1rem 0;
+  line-height: 2em;
+}
+.span {
+  font-weight: bold;
+}
+
+#about-us button {
+  border: 3px solid;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  background-color: white;
+}
+
+#services{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f2f2f2;
+  padding: 2em 0;
+  gap: 2em;
+  font-size: 1.2em;
+}
+
+.services-container{
   width: 70%;
 }
 .services-container ul {
@@ -126,4 +144,142 @@ body {
 .services-container li i {
   transform: scale(1.6);
   height: 1.2em;
+  color: #52ab98;
+
+}
+
+#counter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 3em 0;
+  color: #fff;
+}
+#counter div{
+  display: flex;
+  flex-direction: column;
+  gap: .8em;
+}
+
+#project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f2f2f2;
+  padding: 2em 0;
+  gap: 2em;
+  font-size: 1.2em;
+}
+
+.project-container{
+  width: 70%;
+}
+.project-container ul {
+  display: flex;
+  margin-top: 2em;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0%;
+}
+.project-container li {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 2em 1em;
+  background: #fff;
+  border-radius: 16px;
+  gap: 1em;
+}
+.project-container li i {
+  transform: scale(1.6);
+  height: 1.2em;
+  color: #52ab98;
+}
+
+#comunication div{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 3em 0;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.2em;
+  gap: 1em;
+  width: 70%;
+}
+
+#comunication button{
+  border-radius: 16px;
+  padding: .5em .8em;
+}
+
+#testimonial{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+  gap: 1em;
+  padding: 2em 0;
+  font-size: 1.2em;
+  }
+
+.testimonial-containers{
+  width: 70%;
+}
+
+.testimonial-containers ul{
+  display: flex;
+  list-style-type: none;
+  margin-top: 2em;
+  justify-content: space-between;
+  font-size: .8em;
+}
+
+.testimonial-containers ul li{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 1em;
+  background: #fff;
+  gap: .5em;
+  overflow:hidden;
+  padding-bottom: 1em;
+}
+
+.testimonial-containers ul li h6{
+  font-weight: 100;
+}
+
+#clients{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  gap: 2em;
+  padding: 2em 0;
+  font-size: 1.2em;
+}
+
+.clients-containers{
+  width: 70%;
+}
+
+.clients-containers ul{
+  display: flex;
+  list-style-type: none;
+  margin: 2em 0;
+  gap: 1em;
 }
