@@ -399,6 +399,7 @@ body h1 {
   color: #00bfff;
   font-size: 1.2em;
 }
+
 #faq h1 {
   color: #00bfff;
 }
@@ -412,9 +413,12 @@ body h1 {
 }
 
 .faq-accordion-item {
+  display: flex;
+  flex-direction: row;
   background-color: #00bfff;
   color: black;
-  padding: .5em 0;
+  text-align: center;
+  justify-content: left;
 }
 
 .faq-accordion-item span {
@@ -425,4 +429,75 @@ body h1 {
   background: #333;
   color: #fff;
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.faq-accordion-item h3 {
+  height: 40px;
+  font-weight: 100;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#footer{
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+  background-color: #002e5f;
+  color: #fff;
+  margin: 0 auto;
+  padding: 3em 0;
+}
+
+.footer-top{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  justify-content: space-evenly;
+}
+
+.footer-container{
+  flex-direction: column;
+  width: 20%;
+}
+
+.footer-top h3{
+  font-weight: 300;
+  padding: 1em 0;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.footer-container ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-container ul li a{
+  color: #fff;
+  text-decoration: none;
+  text-decoration: underline;
+  line-height: 2em;
+}
+
+.footer-container-icon a{
+  background-color: #fff;
+  padding: 0.4em;
+  color: #00bfff;
+  margin: 1em .2em;
+  text-decoration: none;
+}
+
+.footer-container-btn{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top:.6em;
+}
+
+.footer-container-btn input{
+width: 50%;
+border: 1px solid #fff;
+padding: .4em 0;
 }
