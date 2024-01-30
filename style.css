@@ -110,13 +110,13 @@ padding: 0 1em;
   font-weight: bold;
 }
 
-#about-us button {
+/* #about-us button {
   border: 3px solid;
   border-radius: 1em;
   padding: 0.5em 1em;
   font-size: 1em;
   background-color: white;
-}
+} */
 
 #services {
   display: flex;
